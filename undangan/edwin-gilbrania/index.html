@@ -59,6 +59,7 @@
       </h1>
       <img class="u-hidden-lg u-hidden-md u-hidden-sm u-hidden-xl u-image u-image-default u-image-5"
         src="images/PAGE11.png" alt="" data-image-width="1080" data-image-height="1920">
+      <button id="aksi" hidden>Play</button>
     </div>
   </section>
 
@@ -239,8 +240,13 @@
     <script>
       var audio = new Audio('https://github.com/sadayana13/sadayana13.github.io/blob/main/undangan/edwin-gilbrania/music/music.mp3?raw=true');
       $(document).ready(() => {
+        $('#aksi').click(() => {
+            audio.play()
+        })
+
         setTimeout(() => {
-          audio.play()
+          $('#aksi').click()
+          console.log('play')
         }, 2000)
       })
       
