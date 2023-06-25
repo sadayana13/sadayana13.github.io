@@ -240,12 +240,13 @@
     <script>
       var audio = new Audio('https://github.com/sadayana13/sadayana13.github.io/blob/main/undangan/edwin-gilbrania/music/music.mp3?raw=true');
       $(document).ready(() => {
-        $('#aksi').click(() => {
-            audio.play()
-        })
+        $('#aksi').on( "click", function() {
+          audio.play()
+          console.log( $( this ).text() );
+        });
 
         setTimeout(() => {
-          $('#aksi').click()
+          document.getElementById('aksi').click()
           console.log('play')
         }, 2000)
       })
