@@ -830,7 +830,7 @@ const buka = async () => {
     });
     animation();
 
-    await login();
+    // await login();
     timer();
     audio.play();
 };
