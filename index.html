@@ -374,6 +374,287 @@
             color: #667eea;
         }
 
+        /* Partnership Section */
+        .partnership {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+
+        .partnership-intro {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 3rem;
+            padding: 0 2rem;
+        }
+
+        .partnership-intro p {
+            font-size: 1.2rem;
+            color: #666;
+            line-height: 1.8;
+        }
+
+        /* Strategic Partners */
+        .strategic-partners {
+            margin-bottom: 4rem;
+        }
+
+        .strategic-partners h3 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #333;
+            position: relative;
+        }
+
+        .strategic-partners h3::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 3px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border-radius: 2px;
+        }
+
+        .partners-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .partner-card {
+            background: white;
+            border-radius: 20px;
+            padding: 2.5rem;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            border: 2px solid transparent;
+        }
+
+        .partner-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, transparent 0%, rgba(102, 126, 234, 0.03) 100%);
+            z-index: 1;
+            transition: all 0.3s ease;
+        }
+
+        .partner-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+            border-color: rgba(102, 126, 234, 0.2);
+        }
+
+        .partner-card:hover::before {
+            background: linear-gradient(135deg, transparent 0%, rgba(102, 126, 234, 0.08) 100%);
+        }
+
+        .partner-card * {
+            position: relative;
+            z-index: 2;
+        }
+
+        .partner-logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .partner-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: white;
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+        }
+
+        .partner-logo h4 {
+            font-size: 1.5rem;
+            color: #333;
+            margin: 0;
+        }
+
+        .partner-card p {
+            color: #666;
+            font-size: 1rem;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+
+        .partner-benefits {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .partnership-cta {
+            text-align: center;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(102, 126, 234, 0.3);
+        }
+
+        .partnership-cta h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .partnership-cta p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .partnership-cta .cta-button {
+            background: white;
+            color: #667eea;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .partnership-cta .cta-button:hover {
+            background: #f8f9fa;
+            transform: translateY(-3px);
+        }
+
+        .benefit-tag {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+
+        /* Shareholders Section */
+        .shareholders {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .shareholder-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .shareholder-card {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 20px;
+            padding: 3rem;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .shareholder-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(102, 126, 234, 0.05) 0%, transparent 70%);
+            animation: rotate 20s linear infinite;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .shareholder-card * {
+            position: relative;
+            z-index: 2;
+        }
+
+        .shareholder-icon {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 2rem;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            color: white;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+
+        .shareholder-card h3 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #333;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .shareholder-card p {
+            color: #666;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .shareholder-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .feature-point {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .feature-point:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .feature-point .feature-icon {
+            font-size: 1.2rem;
+        }
+
+        .feature-point span:last-child {
+            font-weight: 600;
+            color: #333;
+        }
+
         /* Responsive */
         @media (max-width: 768px) {
             .nav-links {
@@ -472,6 +753,81 @@
         </div>
     </section>
 
+    <!-- Shareholders Section -->
+    <section class="shareholders" id="shareholders">
+        <div class="container">
+            <h2 class="section-title">Shareholder</h2>
+            <div class="shareholder-content">
+                <div class="shareholder-card">
+                    <div class="shareholder-icon">🏢</div>
+                    <h3>MaveTextile</h3>
+                    <p>Sebagai pemegang saham utama MaveTextile, Kaluna Digital Innovation berkontribusi aktif dalam pengembangan industri fashion melalui dukungan teknologi dan digitalisasi.</p>
+                    <!-- <div class="shareholder-features">
+                        <div class="feature-point">
+                            <span class="feature-icon">💼</span>
+                            <span>Dukungan Strategis</span>
+                        </div>
+                        <div class="feature-point">
+                            <span class="feature-icon">🤝</span>
+                            <span>Kemitraan Jangka Panjang</span>
+                        </div>
+                        <div class="feature-point">
+                            <span class="feature-icon">🌟</span>
+                            <span>Expertise Fashion Industry</span>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partnership Section -->
+    <section class="partnership" id="partnership">
+        <div class="container">
+            <h2 class="section-title">Partnership</h2>
+            <div class="partnership-intro">
+                <p>Kami telah membangun kemitraan strategis dengan perusahaan teknologi terdepan untuk memberikan solusi digital yang komprehensif dan berkualitas tinggi bagi semua klien kami.</p>
+            </div>
+            
+            <!-- Strategic Partners -->
+            <div class="strategic-partners">
+                <h3>Strategic Partners</h3>
+                <div class="partners-grid">
+                    <div class="partner-card">
+                        <div class="partner-logo">
+                            <div class="partner-icon">☁️</div>
+                            <h4>Biznet GioCloud</h4>
+                        </div>
+                        <p>Partnership strategis dengan Biznet GioCloud memberikan kami akses ke infrastruktur cloud computing terdepan di Indonesia. Kolaborasi ini memungkinkan kami menyediakan layanan yang scalable, reliable, dan high-performance.</p>
+                        <div class="partner-benefits">
+                            <span class="benefit-tag">Cloud Infrastructure</span>
+                            <span class="benefit-tag">High Availability</span>
+                            <span class="benefit-tag">Scalable Solutions</span>
+                        </div>
+                    </div>
+                    <!-- <div class="partner-card">
+                        <div class="partner-logo">
+                            <div class="partner-icon">⚙️</div>
+                            <h4>Odoo</h4>
+                        </div>
+                        <p>Kemitraan dengan Odoo memungkinkan kami mengintegrasikan sistem ERP yang powerful untuk mengelola seluruh aspek bisnis dengan efisien. Dari inventory management hingga customer relationship, semua terintegrasi dalam satu platform.</p>
+                        <div class="partner-benefits">
+                            <span class="benefit-tag">ERP Integration</span>
+                            <span class="benefit-tag">Business Management</span>
+                            <span class="benefit-tag">Process Automation</span>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="partnership-cta">
+                <h3>Tertarik Bermitra dengan Kami?</h3>
+                <p>Hubungi tim partnership kami untuk membahas peluang kerjasama yang dapat menguntungkan kedua belah pihak.
+                </p>
+                <a href="#contact" class="cta-button">Hubungi Partnership Team</a>
+            </div>
+        </div>
+    </section>
+
     <!-- Features Section -->
     <section class="features" id="about">
         <div class="container">
@@ -492,6 +848,11 @@
                     <h3>Kualitas Premium</h3>
                     <p>Produk dan layanan berkualitas tinggi dengan harga yang kompetitif</p>
                 </div>
+                <!-- <div class="feature-item">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Layanan Terpadu</h3>
+                    <p>Satu platform untuk semua kebutuhan digital Anda</p>
+                </div> -->
             </div>
         </div>
     </section>
